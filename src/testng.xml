@@ -1,0 +1,252 @@
+@Parameters({"firstname","secondname"})
+	@Test(invocationCount =10)
+	
+	public void C1 (String firstname, String secondname)
+	{
+		System.out.println("First Name is "+ firstname);
+		System.out.println("Second Name is"+ secondname);
+	}<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite1">  
+  <test name="Test1">
+
+
+   
+  # Part 1 When you want to include the whole package.
+	       <packages>  
+	            <package name="com.testng1" /> 
+	             <package name="com.testng2" /> 
+	             <package name="com.testng3" />
+	             <package name="com.testng.test" />
+	             <package name="com.testng.factory" /> 
+	         </packages>  
+   
+   
+   
+  # Part 2 Include the Class
+  <!--  
+   <classes>
+        <class name = "com.testng1.ClassA" />
+   </classes> -->
+   
+   
+  # Part 3 Only for Particular Groups
+  
+<groups>
+    <run>  
+      <exclude name="samsung.*"  />  
+      <exclude name="nokia.*" />
+      <include name="blackberry.*" />
+      <include name="Vodafone"  />  
+    </run>  
+</groups>  
+ 
+<classes>
+ 	<class name = "com.testng1.ClassA"></class>
+ 	<class name = "com.testng1.ClassB"></class>
+</classes>
+   
+
+  # Part 4 Include Method Names
+  
+<!--   <classes>
+  	<class name="com.testng1.ClassA"></class>	
+  		<methods>
+  			<include name="B1"></include>
+  		</methods>
+  		
+  		  	<class name="com.testng1.ClassB"></class>	
+  		<methods>
+  			<include name="B3"></include>
+  		</methods>
+  </classes> -->
+  
+  
+  
+  # Part 5  Include Parameter
+  
+<!--   <classes>
+  	<class name = "com.testng2.ClassC">
+		<parameter name ="firstname" value="Xebia XTR" />
+		<parameter name ="secondname" value="Xebia XTR1" />
+	</class>  
+  </classes> -->
+  
+  
+  # Part 6 DependentOnMethods
+  
+<!--   <classes>
+  	<class name = "com.testng3.DependOnMethod">
+  		<parameter name ="One" value = "subrahmanyam" />
+  	</class>
+  </classes> -->
+  
+  # Part 7 DependentOnGroups
+  
+<!--   <classes>
+  	<class name = "com.testng3.DependentOnGroups">
+		<parameter name ="name.1" value="Subrahmanyam1" />
+		<parameter name ="name.2" value="Subrahmanyam2" />
+    </class>  
+  </classes> -->
+  
+  
+  # Class level Annotations
+  
+  
+  
+  # Part 8 @Always Run
+  
+<!--   <classes>
+  	<class name ="com.testng2.ClassE" />
+  </classes> -->
+  
+  
+  # Part 9 Disable one method out of many groups
+  
+  
+
+<!--   <groups>
+  <run>
+  
+  <include name ="checkintest" />
+  <exclude name = "broken" />
+  
+  </run>  
+  </groups> 
+  
+  
+  <classes>
+  <class name ="com.testng2.ClassD" />
+  </classes> -->
+  
+  
+  
+  #Part 10  Parallel Methods,Test and Classes
+  
+<!--     <suite name="My suite" parallel="methods" thread-count="5">
+	<suite name="My suite" parallel="tests" thread-count="5">
+	<suite name="My suite" parallel="classes" thread-count="5"> -->
+	
+	
+  # Invocation Count - Class F
+  
+    
+  # Running the Failed Test Cases using testng-failed.xml  -Class G
+  
+    
+  # Running TestNg Programatically -Class H
+  
+  
+  # Run the JUNIT Annotations
+  
+<test name="Test1" junit="true">
+ 	<classes>
+  	<class name ="com.testng2.ClassK" />
+    </classes>
+</test>>
+  # Data Providers  
+  	
+  
+  # Factory Annotation --- com.testng.factory
+  
+<!--     <classes>
+  		<class name="com.testng.factory.FactoryClassA" />
+ 	 </classes>  -->
+  
+<!-- 	 <classes>
+  		<class name="com.testng.factory.FactoryClassB" />
+ 	 </classes> -->
+ 	 
+ #  Annotation Transformers ---Class I and J
+ 
+ 
+<!--  	 <listeners>
+    	  <listener class-name="com.testng2.ClassI" />
+ 	 </listeners>
+ 
+ 	 <classes>
+  		<class name="com.testng2.ClassJ" />
+ 	 </classes> -->
+ 
+  	
+  # BEAN SHELL SCRIPTING
+  
+<!--  <classes> 
+ 	<class name = "com.testng1.BeanShell" />
+ 		<method-selectors>
+   		  <method-selector>
+ 			<script language="beanshell"><![CDATA[testngMethod.getMethodName().equals("abc1")]]></script>
+ 		  </method-selector>
+ 		</method-selectors> 			
+  </classes> -->
+  
+  
+  
+  <!-- <classes>
+  <class name = "com.testng1.BeanShell" />
+   <method-selectors>
+    <method-selector>
+      <script language="beanshell"><![CDATA[
+				test = method.getAnnotation(org.testng.annotations.Test.class);
+      if (test != null) {
+        groups = ((org.testng.annotations.Test)test).groups();
+        for (int i = 0; i < groups.length; i++) {
+          if (groups[i].equals("one")) {
+          
+            return true;
+          }
+        }
+      }
+      return false;
+           ]]>
+        </script>
+     </method-selector>
+    </method-selectors>
+  </classes> -->
+  
+  
+<!--  <classes>
+  <class name = "com.testng1.BeanShell" />
+   <method-selectors>
+    <method-selector>
+      <script language="beanshell"><![CDATA[
+        (groups.containsKey("Functional") && groups.containsKey("Sanity")) 
+           ]]>
+        </script>
+     </method-selector>
+    </method-selectors>
+  </classes> -->
+  
+  
+  
+<!--  <classes>
+  <class name = "com.testng1.BeanShell" />
+   <method-selectors>
+    <method-selector>
+      <script language="beanshell"><![CDATA[
+     		<p>0 == JOptionPane.showConfirmDialog(<br>
+  new JFrame(),<br>
+  "Run this method?\n" + method,<br>
+  "TestNG",<br>
+  JOptionPane.YES_NO_OPTION);</p>
+           ]]>
+        </script>
+     </method-selector>
+    </method-selectors>
+  </classes> -->
+  
+  # Reporter API
+  
+  
+ <!-- 	 <classes>
+  		<class name="com.testng3.TestReporter" />
+ 	 </classes> -->
+ 	
+ 	 
+  
+  
+  
+  </test>
+</suite>
+

@@ -1,0 +1,988 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>74/11/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 18 00:29:52 IST 2012</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (171 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testng2.ClassG.A()'><b>A</b><br>Test class: com.testng2.ClassG</td>
+<td><div><pre>java.lang.AssertionError: expected [0] but found [1]
+	at com.testng2.ClassG.A(ClassG.java:12)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593112861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593112861'><pre>java.lang.AssertionError: expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.testng2.ClassG.A(ClassG.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng2.ClassG@2d675d70</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173711309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173711309'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840121058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840121058'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7868747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7868747'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1193007964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1193007964'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace171056538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace171056538'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace984092697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace984092697'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176433427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace176433427'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783563097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783563097'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace805127884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805127884'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.passedTest()'><b>passedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803965313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803965313'><pre>junit.framework.ComparisonFailure: null expected:&lt;Hi[]&gt; but was:&lt;Hi[i]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testng2.ClassG.B()'><b>B</b><br>Test class: com.testng2.ClassG</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassG@2d675d70</td></tr>
+<tr>
+<td title='com.testng1.ClassB.B1()'><b>B1</b><br>Test class: com.testng1.ClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.ClassB@265e1f7a</td></tr>
+<tr>
+<td title='com.testng1.ClassA.B2()'><b>B2</b><br>Test class: com.testng1.ClassA</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.ClassA@5ee556a1</td></tr>
+<tr>
+<td title='com.testng1.ClassA.B3()'><b>B3</b><br>Test class: com.testng1.ClassA</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.ClassA@5ee556a1</td></tr>
+<tr>
+<td title='com.testng1.ClassB.B3()'><b>B3</b><br>Test class: com.testng1.ClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.ClassB@265e1f7a</td></tr>
+<tr>
+<td title='com.testng1.ClassA.B4()'><b>B4</b><br>Test class: com.testng1.ClassA</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.ClassA@5ee556a1</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng2.ClassF.F()'><b>F</b><br>Test class: com.testng2.ClassF</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassF@47c5ee67</td></tr>
+<tr>
+<td title='com.testng.factory.FactoryClassB.Test()'><b>Test</b><br>Test class: com.testng.factory.FactoryClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.FactoryClassB@3d992030</td></tr>
+<tr>
+<td title='com.testng.factory.FactoryClassB.Test()'><b>Test</b><br>Test class: com.testng.factory.FactoryClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.FactoryClassB@66c540d0</td></tr>
+<tr>
+<td title='com.testng.factory.FactoryClassB.Test()'><b>Test</b><br>Test class: com.testng.factory.FactoryClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.FactoryClassB@20224c66</td></tr>
+<tr>
+<td title='com.testng.factory.FactoryClassB.Test()'><b>Test</b><br>Test class: com.testng.factory.FactoryClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.FactoryClassB@2bc5cd05</td></tr>
+<tr>
+<td title='com.testng.factory.FactoryClassB.Test()'><b>Test</b><br>Test class: com.testng.factory.FactoryClassB</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.FactoryClassB@471719b6</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.abc()'><b>abc</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng2.ClassE.abc()'><b>abc</b><br>Test class: com.testng2.ClassE</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassE@2cc2c69f</td></tr>
+<tr>
+<td title='com.testng1.BeanShell.abc1()'><b>abc1</b><br>Test class: com.testng1.BeanShell</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.BeanShell@6d8f5c10</td></tr>
+<tr>
+<td title='com.testng1.BeanShell.abc2()'><b>abc2</b><br>Test class: com.testng1.BeanShell</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.BeanShell@6d8f5c10</td></tr>
+<tr>
+<td title='com.testng1.BeanShell.abc3()'><b>abc3</b><br>Test class: com.testng1.BeanShell</td>
+<td></td>
+<td>0</td>
+<td>com.testng1.BeanShell@6d8f5c10</td></tr>
+<tr>
+<td title='com.testng2.ClassE.b()'><b>b</b><br>Test class: com.testng2.ClassE</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassE@2cc2c69f</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-405321610" onClick='toggleBox("Output-405321610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-405321610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-405321610">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1258184087" onClick='toggleBox("Output-1258184087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258184087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258184087">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1073932139" onClick='toggleBox("Output-1073932139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1073932139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1073932139">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-686458541" onClick='toggleBox("Output-686458541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-686458541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-686458541">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1306746138" onClick='toggleBox("Output-1306746138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1306746138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1306746138">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1185350682" onClick='toggleBox("Output-1185350682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1185350682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1185350682">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1963378559" onClick='toggleBox("Output-1963378559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1963378559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1963378559">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1700604766" onClick='toggleBox("Output-1700604766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1700604766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1700604766">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-1178959898" onClick='toggleBox("Output-1178959898", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1178959898" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1178959898">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassJ.check()'><b>check</b><br>Test class: com.testng2.ClassJ<br/>
+<a href="#Output-2005061907" onClick='toggleBox("Output-2005061907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2005061907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2005061907">
+Check Was Called<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassJ@229a94b3</td></tr>
+<tr>
+<td title='com.testng2.ClassE.def()'><b>def</b><br>Test class: com.testng2.ClassE</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassE@2cc2c69f</td></tr>
+<tr>
+<td title='com.testng3.TestReporter.failedTest()'><b>failedTest</b><br>Test class: com.testng3.TestReporter</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+<tr>
+<td title='com.testng2.ClassD.testMethod1()'><b>testMethod1</b><br>Test class: com.testng2.ClassD</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassD@6d649643</td></tr>
+<tr>
+<td title='com.testng2.ClassD.testMethod2()'><b>testMethod2</b><br>Test class: com.testng2.ClassD</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassD@6d649643</td></tr>
+<tr>
+<td title='com.testng2.ClassD.testMethod3()'><b>testMethod3</b><br>Test class: com.testng2.ClassD</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassD@6d649643</td></tr>
+<tr>
+<td title='com.testng2.ClassD.testMethod4()'><b>testMethod4</b><br>Test class: com.testng2.ClassD</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassD@6d649643</td></tr>
+<tr>
+<td title='com.testng.factory.TestClass.testServer()'><b>testServer</b><br>Test class: com.testng.factory.TestClass</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.TestClass@14d0ba03</td></tr>
+<tr>
+<td title='com.testng.factory.TestClass.testServer()'><b>testServer</b><br>Test class: com.testng.factory.TestClass</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.TestClass@2ce3a2bb</td></tr>
+<tr>
+<td title='com.testng.factory.TestClass.testServer()'><b>testServer</b><br>Test class: com.testng.factory.TestClass</td>
+<td></td>
+<td>0</td>
+<td>com.testng.factory.TestClass@13a6d101</td></tr>
+<tr>
+<td title='com.testng.test.Annotations.testingOne()'><b>testingOne</b><br>Test class: com.testng.test.Annotations</td>
+<td></td>
+<td>0</td>
+<td>com.testng.test.Annotations@370ae6fc</td></tr>
+<tr>
+<td title='com.testng.test.Annotations.testingThree()'><b>testingThree</b><br>Test class: com.testng.test.Annotations</td>
+<td></td>
+<td>0</td>
+<td>com.testng.test.Annotations@370ae6fc</td></tr>
+<tr>
+<td title='com.testng.test.Annotations.testingTwo()'><b>testingTwo</b><br>Test class: com.testng.test.Annotations</td>
+<td></td>
+<td>0</td>
+<td>com.testng.test.Annotations@370ae6fc</td></tr>
+<tr>
+<td title='com.testng2.ClassL.verifyData1()'><b>verifyData1</b><br>Test class: com.testng2.ClassL<br>Parameters: Sushil, 10</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassL@432a44c3</td></tr>
+<tr>
+<td title='com.testng2.ClassL.verifyData1()'><b>verifyData1</b><br>Test class: com.testng2.ClassL<br>Parameters: Pranav, 12</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassL@432a44c3</td></tr>
+<tr>
+<td title='com.testng2.ClassL.verifyData1()'><b>verifyData1</b><br>Test class: com.testng2.ClassL<br>Parameters: Aman, 14</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassL@432a44c3</td></tr>
+<tr>
+<td title='com.testng2.ClassL.verifyData1()'><b>verifyData1</b><br>Test class: com.testng2.ClassL<br>Parameters: Jayant, 8</td>
+<td></td>
+<td>0</td>
+<td>com.testng2.ClassL@432a44c3</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.ClassLevelAnnotation.xyz()'><b>xyz</b><br>Test class: com.testng3.ClassLevelAnnotation</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.ClassLevelAnnotation@277e07ae</td></tr>
+<tr>
+<td title='com.testng3.Parameterization.xyz()'><b>xyz</b><br>Test class: com.testng3.Parameterization<br>Parameters: username1, password1, email1</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.Parameterization@52988584</td></tr>
+<tr>
+<td title='com.testng3.Parameterization.xyz()'><b>xyz</b><br>Test class: com.testng3.Parameterization<br>Parameters: username2, password2, email2</td>
+<td></td>
+<td>0</td>
+<td>com.testng3.Parameterization@52988584</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testng3.TestReporter.skipTest()'><b>skipTest</b><br>Test class: com.testng3.TestReporter</td>
+<td><div><pre>org.testng.SkipException
+	at com.testng3.TestReporter.skipTest(TestReporter.java:26)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664344584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664344584'><pre>org.testng.SkipException
+	at com.testng3.TestReporter.skipTest(TestReporter.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.testng3.TestReporter@1b65c779</td></tr>
+</table><p>
+</body>
+</html>

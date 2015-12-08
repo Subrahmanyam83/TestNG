@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <test name="Test1(failed)" preserve-order="true">
+    <classes>
+      <class name="com.testng.test.Annotations">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class>
+      <class name="com.testng.factory.TestClass">
+        <methods>
+          <include name="callBefore"/>
+          <include name="callAfter"/>
+        </methods>
+      </class>
+      <class name="com.testng2.ClassC">
+        <methods>
+          <include name="C1"/>
+          <include name="abc"/>
+        </methods>
+      </class>
+      <class name="com.testng3.TestReporter">
+        <methods>
+          <include name="passedTest"/>
+          <include name="skipTest"/>
+        </methods>
+      </class>
+      <class name="com.testng2.ClassG">
+        <methods>
+          <include name="A"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,9 @@
+
+name: Suite1
+ 
+tests:
+  - name: Test1
+    parameters: { count: 10 }
+    classes:
+      - com.testng.test.Annotations
+     

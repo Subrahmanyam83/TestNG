@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Failed suite [Suite1]]">
+  <parameter name="name.2" value="Subrahmanyam2"/>
+  <parameter name="name.1" value="Subrahmanyam1"/>
+  <test name="Test Phones(failed)(failed)" preserve-order="false">
+    <parameter name="name.2" value="Subrahmanyam2"/>
+    <parameter name="name.1" value="Subrahmanyam1"/>
+    <classes>
+      <class name="com.testng3.DependentOnGroups">
+        <methods>
+          <include name="abc1" invocation-numbers="0"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

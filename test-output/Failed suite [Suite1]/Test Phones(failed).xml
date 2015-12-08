@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="xebia-PC" name="com.testng3.DependentOnGroups" tests="1" failures="1" timestamp="9 May 2012 13:09:14 GMT" time="0.093" errors="0">
+  <testcase name="abc1" time="0.062" classname="com.testng3.DependentOnGroups">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Subrahmanyam&amp;gt; but was:&amp;lt;Subrahmanyam2&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Subrahmanyam> but was:<Subrahmanyam2>
+	at com.testng3.DependentOnGroups.abc1(DependentOnGroups.java:23)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

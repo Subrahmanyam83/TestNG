@@ -1,17 +1,1245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="22" total="98" passed="75">
   <reporter-output>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
+    <line>
+      <![CDATA[Check Was Called]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2012-12-02T15:30:33Z" finished-at="2012-12-02T15:30:33Z">
+  <suite name="Suite1" duration-ms="140" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
     <groups>
+      <group name="broken">
+        <method signature="com.testng2.ClassD.testMethod1()" name="testMethod1" class="com.testng2.ClassD"/>
+      </group>
+      <group name="blackberry.test">
+        <method signature="com.testng1.ClassB.B3()" name="B3" class="com.testng1.ClassB"/>
+      </group>
+      <group name="nokia.test">
+        <method signature="com.testng1.ClassB.B1()" name="B1" class="com.testng1.ClassB"/>
+      </group>
+      <group name="Airtel">
+        <method signature="com.testng1.ClassA.B4()" name="B4" class="com.testng1.ClassA"/>
+      </group>
+      <group name="Vodafone">
+        <method signature="com.testng1.ClassA.B3()" name="B3" class="com.testng1.ClassA"/>
+      </group>
+      <group name="Live">
+        <method signature="com.testng2.ClassD.testMethod2()" name="testMethod2" class="com.testng2.ClassD"/>
+      </group>
+      <group name="UAT">
+        <method signature="com.testng1.BeanShell.abc3()" name="abc3" class="com.testng1.BeanShell"/>
+        <method signature="com.testng2.ClassD.testMethod4()" name="testMethod4" class="com.testng2.ClassD"/>
+        <method signature="com.testng1.BeanShell.abc1()" name="abc1" class="com.testng1.BeanShell"/>
+      </group>
+      <group name="Sanity">
+        <method signature="com.testng1.BeanShell.abc2()" name="abc2" class="com.testng1.BeanShell"/>
+        <method signature="com.testng2.ClassD.testMethod3()" name="testMethod3" class="com.testng2.ClassD"/>
+        <method signature="com.testng1.BeanShell.abc1()" name="abc1" class="com.testng1.BeanShell"/>
+      </group>
+      <group name="Functional">
+        <method signature="com.testng1.BeanShell.abc3()" name="abc3" class="com.testng1.BeanShell"/>
+        <method signature="com.testng1.BeanShell.abc2()" name="abc2" class="com.testng1.BeanShell"/>
+      </group>
+      <group name="HTC">
+        <method signature="com.testng1.ClassA.B2()" name="B2" class="com.testng1.ClassA"/>
+      </group>
+      <group name="checkintest">
+        <method signature="com.testng2.ClassD.testMethod1()" name="testMethod1" class="com.testng2.ClassD"/>
+        <method signature="com.testng2.ClassD.testMethod2()" name="testMethod2" class="com.testng2.ClassD"/>
+        <method signature="com.testng2.ClassD.testMethod3()" name="testMethod3" class="com.testng2.ClassD"/>
+        <method signature="com.testng2.ClassD.testMethod4()" name="testMethod4" class="com.testng2.ClassD"/>
+      </group>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2012-12-02T15:30:33Z" finished-at="2012-12-02T15:30:33Z">
-      <class name="Xebia.TestNG1.App">
-        <test-method status="PASS" signature="abcd()[pri:0, instance:Xebia.TestNG1.App@78b4c4]" name="abcd" duration-ms="15" started-at="2012-12-02T21:00:33Z" finished-at="2012-12-02T21:00:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- abcd -->
-      </class> <!-- Xebia.TestNG1.App -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Test1" duration-ms="140" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+      <class name="com.testng3.TestReporter">
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="16" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="failedTest()" name="failedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="skipTest()" name="skipTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.SkipException">
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException
+	at com.testng3.TestReporter.skipTest(TestReporter.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="passedTest()" name="passedTest" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hi[]> but was:<Hi[i]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Hi[]> but was:<Hi[i]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+      <class name="com.testng1.BeanShell">
+        <test-method status="PASS" signature="abc3()" name="abc3" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc1()" name="abc1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc2()" name="abc2" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng.factory.TestClass">
+        <test-method status="PASS" signature="testServer()" name="testServer" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callAfter()" name="callAfter" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callBefore()" name="callBefore" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callBefore()" name="callBefore" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callAfter()" name="callAfter" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callBefore()" name="callBefore" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testServer()" name="testServer" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="callAfter()" name="callAfter" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testServer()" name="testServer" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng.test.AnnotationsTest">
+        <test-method status="PASS" signature="f()" name="f" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng1.ClassB">
+        <test-method status="PASS" signature="B1()" name="B1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="B3()" name="B3" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng1.ClassA">
+        <test-method status="PASS" signature="B2()" name="B2" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="B3()" name="B3" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="B4()" name="B4" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng3.Parameterization">
+        <test-method status="PASS" signature="xyz(java.lang.String, java.lang.String, java.lang.String)" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[email2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="xyz(java.lang.String, java.lang.String, java.lang.String)" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[email1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="com.testng3.ClassLevelAnnotation">
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="xyz()" name="xyz" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng.test.Annotations">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeSuite()" name="beforeSuite" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeClass()" name="beforeClass" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterClass()" name="afterClass" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testingTwo()" name="testingTwo" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testingOne()" name="testingOne" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testingThree()" name="testingThree" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="afterSuite()" name="afterSuite" is-config="true" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassL">
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jayant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sushil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassC">
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="abc(java.lang.String, java.lang.String)" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'secondname' is required by @Test on method abc
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'secondname' is required by @Test on method abc
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="C1(java.lang.String, java.lang.String)" name="C1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'firstname' is required by @Test on method C1
+but has not been marked @Optional or defined in C:\workspace-indigo\TestNG\src\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1315)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1022)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassJ">
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="check()" name="check" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng.factory.FactoryClassB">
+        <test-method status="PASS" signature="Test()" name="Test" duration-ms="16" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="Test()" name="Test" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="Test()" name="Test" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="Test()" name="Test" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="Test()" name="Test" duration-ms="62" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassG">
+        <test-method status="FAIL" signature="A()" name="A" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0> but was:<1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0> but was:<1>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:365)
+	at org.testng.Assert.assertEquals(Assert.java:375)
+	at com.testng2.ClassG.A(ClassG.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="B()" name="B" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassF">
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="15" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="15" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="F()" name="F" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassE">
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="def()" name="def" duration-ms="0" started-at="2012-12-19T19:01:08Z" depends-on-methods="com.testng2.ClassE.abc" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="b()" name="b" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+      <class name="com.testng2.ClassD">
+        <test-method status="PASS" signature="testMethod1()" name="testMethod1" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testMethod3()" name="testMethod3" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testMethod2()" name="testMethod2" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+        <test-method status="PASS" signature="testMethod4()" name="testMethod4" duration-ms="0" started-at="2012-12-19T19:01:08Z" finished-at="2012-12-19T19:01:08Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
 </testng-results>

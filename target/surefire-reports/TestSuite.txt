@@ -1,4 +1,62 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec
+Tests run: 97, Failures: 11, Errors: 0, Skipped: 12, Time elapsed: 2.013 sec <<< FAILURE!
+A(com.testng2.ClassG)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:365)
+	at org.testng.Assert.assertEquals(Assert.java:375)
+	at com.testng2.ClassG.A(ClassG.java:12)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)
+passedTest(com.testng3.TestReporter)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...i>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.testng3.TestReporter.passedTest(TestReporter.java:14)

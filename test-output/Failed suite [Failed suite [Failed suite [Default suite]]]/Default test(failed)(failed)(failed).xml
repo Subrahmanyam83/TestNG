@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="srentala" name="com.testng2.ClassG" tests="1" failures="0" timestamp="29 Aug 2012 11:55:41 GMT" time="0.062" errors="0">
+  <testcase name="A" time="0.031" classname="com.testng2.ClassG"/>
+</testsuite>

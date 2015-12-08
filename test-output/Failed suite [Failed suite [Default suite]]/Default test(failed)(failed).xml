@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="srentala" name="com.testng2.ClassG" tests="1" failures="1" timestamp="29 Aug 2012 11:55:05 GMT" time="0.073" errors="0">
+  <testcase name="A" time="0.038" classname="com.testng2.ClassG">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;0&amp;gt; but was:&amp;lt;1&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<0> but was:<1>
+	at com.testng2.ClassG.A(ClassG.java:12)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
